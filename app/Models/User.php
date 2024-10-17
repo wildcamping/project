@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Storage;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Usamamuneerchaudhary\Commentify\Traits\HasUserAvatar;
 use Overtrue\LaravelVote\Traits\Voter;
-use GeneaLabs\LaravelModelCaching\Traits\Cachable;
+//use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
  * @property bool $prefers_anonymous_questions
@@ -68,7 +68,7 @@ final class User extends Authenticatable implements FilamentUser, MustVerifyEmai
     use HasFactory, Notifiable, TwoFactorAuthenticatable;
     use HasUserAvatar;
     use Voter;
-    use Cachable;
+    //use Cachable; //bład werywikacji email
 
     protected $cachePrefix = "users";
 

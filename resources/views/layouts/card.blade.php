@@ -4,6 +4,7 @@
 <head>
     @include('layouts.components.head')
     @stack('styles')
+    @cookieconsentscripts
 </head>
 
 <body class="dark:bg-slate-950 bg-slate-100 bg-center bg-repeat font-sans dark:text-slate-50 text-slate-900 antialiased"
@@ -30,6 +31,7 @@
         <x-footer />
     @endpersist
     @livewireScriptConfig
+    @cookieconsentview
     @stack('scripts')
 </body>
 
