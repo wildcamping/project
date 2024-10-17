@@ -1,0 +1,53 @@
+{
+  "id": "Wildcamping",
+  "background_color": "#29bdae",
+  "description": "Utwórz konto, dodaj sprawdzone miejsca na nocleg, nawiąż kontakt i dziel się pasją z ludźmi o tych samych zainteresowaniach.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "wildcamping.pl",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Wildcamping",
+  "start_url": "/",
+  "theme_color": "#29bdae",
+  "icons": [
+    {
+      "src": "https://pinkary.com/img/ico.svg",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://pinkary.com/img/ico.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/img/ico.svg",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://pinkary.com/screenshots/1.png",
+      "type": "image/png",
+      "sizes": "852x1528"
+    },
+    {
+      "src": "https://pinkary.com/screenshots/2.png",
+      "type": "image/png",
+      "sizes": "852x1528"
+    },
+    {
+      "src": "https://pinkary.com/screenshots/3.png",
+      "type": "image/png",
+      "sizes": "852x1528"
+    },
+    {
+      "src": "https://pinkary.com/screenshots/4.png",
+      "type": "image/png",
+      "sizes": "852x1528"
+    }
+  ],
+  "categories": [
+    "social"
+  ]
+}
