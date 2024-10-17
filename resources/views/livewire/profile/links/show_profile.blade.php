@@ -153,7 +153,7 @@
         </div>
         <div class="mt-6 flex items-center justify-end flex-wrap gap-4 border-t dark:border-slate-900 border-slate-200 pt-3"
             x-data="clickHandler">
-            @if (!$link->is_visible)
+            {{-- @if (!$link->is_visible)
                 <x-warning-button class="gap-2"
                     wire:click="$dispatchTo('profile.links', 'link.confirmDelete', { linkId: {{ $link->id }} })"
                     data-navigate-ignore="true">
@@ -174,7 +174,17 @@
                 @else
                     <x-paragraf>{{ __('Reported to moderation.') }}</x-paragraf>
                 @endif
-            @endif
+            @endif--}}
+                <x-warning-button class="gap-2"
+                    wire:click="$dispatchTo('profile.links', 'link.confirmDelete', { linkId: {{ $link->id }} })"
+                    data-navigate-ignore="true">
+                    <x-heroicon-o-trash class="size-4" />
+                </x-warning-button>
+                <x-primary-button class="gap-2"
+                    wire:click="$dispatchTo('links.edit', 'link.edit', { link: {{ $link->id }} })"
+                    data-navigate-ignore="true">
+                    <x-heroicon-o-pencil class="size-4" />{{ __('Edit') }}
+                </x-primary-button>
         </div>
     </div>
 </article>
